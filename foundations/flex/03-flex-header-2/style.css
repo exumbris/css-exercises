@@ -12,6 +12,35 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+
+/*In doing this, we are saying that the
+flex-direction of the items is row;
+thus, they were stacked on top of each other before
+and now line up next to one another; each
+its own little box of content to be managed
+by flexbox*/
+
+}
+
+.left{
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 10px;
+}
+
+.links{
+  display: flex;
+  margin-left: 0;
+  padding:0;
+  gap: 12px;
 }
 
 .profile-image {
@@ -27,6 +56,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  width: 150px;
+  margin-left: 15px;
 }
 
 button {
